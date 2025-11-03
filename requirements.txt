@@ -1,5 +1,5 @@
 torch==2.8.0
-torchaudio=0.13.1+cu117
+torchaudio==0.13.1+cu117
 torchvision==0.14.1+cu117
 numpy>=1.21.0
 matplotlib>=3.5.0
