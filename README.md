@@ -8,7 +8,7 @@ This repository provides a Python implementation for optimization and analysis o
 
 ### 1. Create the Conda Environment
 ```bash
-conda env create --name envoptliealgebra python=3.9
+conda create -n envoptliealgebra python=3.10
 ```
 
 ### 2. Activate the Environment
