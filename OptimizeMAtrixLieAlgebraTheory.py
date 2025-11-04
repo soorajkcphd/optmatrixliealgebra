@@ -1597,7 +1597,7 @@ class ValidationRunner:
                 passed += int(ok)
                 report.append(f" Status: {'OK PASS' if ok else 'X FAIL'}")
             else:
-                report.append(" Status: ⚠ NOT RUN")
+                report.append(" Status:  NOT RUN")
             report.append("")
 
         report.append("="*80)
