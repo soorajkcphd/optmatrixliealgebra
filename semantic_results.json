@@ -1,0 +1,267 @@
+{
+  "structure_discovery": {
+    "best_algebra": "so",
+    "residual": 2.0947343728039414e-05,
+    "perm_mean": 5.436821811599657e-05,
+    "p_value": 0.007751937984496124,
+    "effect_size_d": 33.420874387957156,
+    "significant": true
+  },
+  "rl_training": {
+    "iters": 120,
+    "batch_prompts": 8,
+    "final_reward": 0.6051288733383603
+  },
+  "evaluation": {
+    "average_reward": 0.623777501900486,
+    "average_length": 28.333333333333332,
+    "average_repetition": 0.02860873694207028,
+    "samples": [
+      [
+        "Write about geometric structure in reinforcement learning.",
+        "Write about geometric structure in reinforcement learning.\n\nIntroduction\n\nRecently (2012), David Vran (http://www.davidvran.com) presented his presentation (http:/www.",
+        0.6385900458398424
+      ],
+      [
+        "The story is about a robot that learns to paint.",
+        "The story is about a robot that learns to paint.\n\nHere are excerpts from my original post:",
+        0.6431956783317418
+      ],
+      [
+        "In the future, agents will learn from symmetry because",
+        "In the future, agents will learn from symmetry because \"if [a] symmetry can be proved by other properties (e.g., eigenvalues) than [a symmetry] cannot be justified (e.,",
+        0.6148441045681904
+      ],
+      [
+        "Explain why group actions matter in optimization.",
+        "Explain why group actions matter in optimization.\n\nExplain how group actions are handled\n\nIdentify group interactions\n\nThis overview covers group interactions in JavaScript (also called 'response').\n\n",
+        0.594863644222627
+      ],
+      [
+        "A short story about a mathematician who loves groups.",
+        "A short story about a mathematician who loves groups.\n\nYou may also like:\n\n'Who Are 'Universe'? 'Are Our Exoplanets Not Asteroids?' 'Alien Aliens'",
+        0.6223858659168926
+      ],
+      [
+        "Summarize the role of invariances in optimization.",
+        "Summarize the role of invariances in optimization.\n\nIntroduction\n\nInvariances are not only natural phenomena (e.g., plants) but also highly likely functions (e\n\nSeq.,",
+        0.6287856725236218
+      ]
+    ]
+  },
+  "validation": {
+    "validated_claims": "4/4",
+    "score": 1.0,
+    "C1_structure_benefit": {
+      "delta": 0.01784498261188853,
+      "CI95": [
+        0.004316711223717752,
+        0.03221856134395011
+      ],
+      "p": 0.008,
+      "pass": true
+    },
+    "C2_proj_natgrad_equiv": {
+      "cos_sim_avg": 1.0000000476837159,
+      "samples": [
+        1.0000001192092896,
+        1.0000001192092896,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pass": true
+    },
+    "C3_sample_complexity": {
+      "N_required": [
+        78,
+        70,
+        78,
+        145,
+        161,
+        161,
+        330,
+        360,
+        390,
+        759,
+        897,
+        690,
+        1364,
+        1240,
+        1240
+      ],
+      "dg": [
+        28,
+        28,
+        28,
+        66,
+        66,
+        66,
+        120,
+        120,
+        120,
+        276,
+        276,
+        276,
+        496,
+        496,
+        496
+      ],
+      "n": [
+        8,
+        8,
+        8,
+        12,
+        12,
+        12,
+        16,
+        16,
+        16,
+        24,
+        24,
+        24,
+        32,
+        32,
+        32
+      ],
+      "corr_with_dg": 0.991778339975386,
+      "corr_with_n": 0.9870581347437595,
+      "partial_corr_dg_given_n": 0.6952151034576414,
+      "partial_corr_n_given_dg": 0.434302138887061,
+      "scaling": "intrinsic",
+      "pass": true
+    },
+    "C4_nontrivial_outputs": {
+      "avg_reward": 0.623777501900486,
+      "avg_len": 28.333333333333332,
+      "avg_repetition": 0.02860873694207028,
+      "pass": true
+    },
+    "perm_calibration": {
+      "alpha": 0.05,
+      "type1_rates": {
+        "so": 0.0,
+        "sl": 0.0,
+        "sym": 0.0
+      }
+    },
+    "fisher_vs_proj": {
+      "cos_sim_mean": 1.0,
+      "cos_sim_std": 0.0,
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "proj_dim": 512,
+      "batches": 5
+    },
+    "multi_algebra_selection": {
+      "per_algebra": {
+        "so": {
+          "p": 0.007751937984496124,
+          "p_ci95": [
+            0.0,
+            0.029136956273508416
+          ],
+          "residual": 2.3310603864956647e-05
+        },
+        "sl": {
+          "p": 1.0,
+          "p_ci95": [
+            0.9708630437264916,
+            1.0
+          ],
+          "residual": 0.0014317259192466736
+        },
+        "sym": {
+          "p": 0.007751937984496124,
+          "p_ci95": [
+            0.0,
+            0.029136956273508416
+          ],
+          "residual": 0.0014022463001310825
+        }
+      },
+      "raw_p": {
+        "so": 0.007751937984496124,
+        "sl": 1.0,
+        "sym": 0.007751937984496124
+      },
+      "p_holm": {
+        "so": 0.023255813953488372,
+        "sym": 0.023255813953488372,
+        "sl": 1.0
+      },
+      "selected": "so"
+    },
+    "Q_vs_return": {
+      "per_alg": [
+        {
+          "alg": "so",
+          "Q": 2.654463423823472e-05,
+          "deltaJ": -0.0015887742257816677
+        },
+        {
+          "alg": "sl",
+          "Q": 0.0001981941459234804,
+          "deltaJ": -0.0015887742257816677
+        },
+        {
+          "alg": "sym",
+          "Q": 0.03880498930811882,
+          "deltaJ": -0.0015887742257816677
+        }
+      ],
+      "pearson_r": 0.0,
+      "spearman_rho": 0.9999999999994997,
+      "n": 3
+    },
+    "exp_derivative_bound": {
+      "max_ratio": 0.9868134260177612,
+      "R": 1.0,
+      "pass": true
+    },
+    "projection_unit_tests": {
+      "so": {
+        "idempotence_rate": 1.0,
+        "orthogonality_rate": 1.0
+      },
+      "sl": {
+        "idempotence_rate": 1.0,
+        "orthogonality_rate": 1.0
+      },
+      "sym": {
+        "idempotence_rate": 1.0,
+        "orthogonality_rate": 1.0
+      }
+    },
+    "projection_bench_so": {
+      "kind": "so",
+      "timings": [
+        {
+          "n": 16,
+          "ms_per_proj": 0.038361549377441406
+        },
+        {
+          "n": 24,
+          "ms_per_proj": 0.036835670471191406
+        },
+        {
+          "n": 32,
+          "ms_per_proj": 0.035953521728515625
+        },
+        {
+          "n": 48,
+          "ms_per_proj": 0.03844499588012695
+        },
+        {
+          "n": 64,
+          "ms_per_proj": 0.03587007522583008
+        }
+      ]
+    }
+  }
+}
